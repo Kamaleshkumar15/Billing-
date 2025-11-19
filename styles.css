@@ -1,0 +1,95 @@
+:root {
+  --brand-primary: #05f2f2;
+  --brand-secondary: #ffe8d6;
+  --brand-dark: #1f1300;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #faf7f2;
+  color: var(--brand-dark);
+}
+
+.hero {
+  background: linear-gradient(120deg, #fcbb2e, #fffefd);
+}
+
+.hero-emblem {
+  width: 50px;
+  height: auto;
+}
+
+#menu-grid .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#menu-grid .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.menu-img {
+  height: 160px;
+  object-fit: cover;
+}
+
+#cart-rows td {
+  vertical-align: middle;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent;
+}
+
+.btn-icon {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+#empty-cart-msg {
+  display: none;
+}
+
+.payment-logos img {
+  height: 28px;
+  max-width: 80px;
+  object-fit: contain;
+  filter: grayscale(0.1);
+}
+
+.payment-logos img:hover {
+  filter: none;
+}
+
+.qr-img {
+  max-width: 260px;
+}
+
+@media (max-width: 991px) {
+  aside {
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero .btn {
+    width: 100%;
+  }
+
+  #menu-grid .card {
+    text-align: center;
+  }
+
+  .payment-logos img {
+    height: 22px;
+  }
+}
+
